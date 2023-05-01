@@ -7,11 +7,11 @@ const InfoSchema = new mongoose.Schema({
     },
     lightMode: {
         type: String,
-        default: "/uploads/logo-lightMode.png"
+        default: "https://lookscout-ig7v.onrender.com/uploads/logo-lightMode.png"
     },
     darkMode: {
         type: String,
-        default: "/uploads/logo-darkMode.svg"
+        default: "https://lookscout-ig7v.onrender.com/uploads/logo-darkMode.svg"
     }
 })
 
