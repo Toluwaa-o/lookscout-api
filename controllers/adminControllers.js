@@ -25,7 +25,7 @@ const imageUpload = async (req, res) => {
     
     await logo.mv(imgPath)
 
-    res.status(200).json({ src: `/uploads/${logo.name}`})
+    res.status(200).json({ src: `https://lookscout-ig7v.onrender.com/uploads/${logo.name}`})
 }
 
 const updateInfo = async (req, res) => {
