@@ -19,7 +19,9 @@ app.use(express.static('./public'))
 app.use(fileUpload())
 app.use(express.json())
 app.use(morgan('tiny'))
-app.use(cors())
+app.use(cors({
+      crossOriginResourcePolicy: false,
+    }))
 app.use(helmet())
 app.use(xss())
 mongoose.set('strictQuery', false)
