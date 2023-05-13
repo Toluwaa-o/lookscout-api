@@ -22,6 +22,7 @@ app.use(morgan('tiny'))
 app.use(cors())
 app.use(helmet({
       crossOriginResourcePolicy: false,
+      crossOriginEmbedderPolicy: false
     }))
 app.use(xss())
 mongoose.set('strictQuery', false)
